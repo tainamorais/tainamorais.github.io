@@ -12,9 +12,13 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, #003038 22%, #f7f7f7 23%);
+    background-image: linear-gradient(to bottom, #003038 22%, #d67e0b, #f7f7f7 23%);
     text-align: center;
     padding: 30px;
+}
+
+header > a > img {
+    width: 70px;
 }
 
 header img {
@@ -26,14 +30,14 @@ header img {
 h1 {
     font-family: 'Montserrat Alternates', sans-serif;
     color: #003038;
-    font-size: 2.9rem;
+    font-size: 2.7rem;
     margin: 10px 0px;
     text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-header div h2 {
+header div h3 {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #003038;
     margin-bottom: 30px;
     text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.1);
@@ -66,4 +70,44 @@ header div {
 
 .navigation li:hover {
     transform: scale(1.1);
+}
+
+
+/* ABOUT ME */
+main {
+    padding: 30px 10px 60px 10px;
+}
+
+#aboutme {
+    background-color: #f7f7f7;
+    max-width: 660px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 10px;
+    color: #d67e0b;
+}
+
+#aboutme p {
+    margin: 20px 0;
+    line-height: 1.5rem;
+}
+
+#aboutme a {
+    text-decoration: dashed;
+    font-style: italic;
+    font-weight: 500;
+    color: #d67e0b;
+}
+
+#aboutme a:hover {
+    text-decoration: underline;
+}
+
+#aboutme em {
+    font-weight: 600;
 }
