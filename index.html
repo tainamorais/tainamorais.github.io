@@ -12,38 +12,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/extends.css">
 
     <title>Tainá Morais</title>
 </head>
 <body>
-    <header>
-        <img src="images/foto-taina-morais-pb.jpeg" alt="Foto Tainá Morais">
-        <div>
-            <h1>Tainá Morais</h1>
-            <h3>Web Developer</h3>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#aboutme">Sobre mim</a></li>
-                    <li><a href="#">Ferramentas</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contatos</a></li>
-                </ul>
-            </nav>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="navbar__content max-width mb-0">
+            <!-- <a href="/">
+                <img class="logo-taina-preta" src="images/logo-taina-preta.png" alt="Tainá Morais">
+            </a> -->
+            <a href="/" class="taina-title">
+                Tainá Morais
+            </a>
+            <ul class="navbar__links">
+                <li><a href="#header">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#footer">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header id="header" class="max-width">
+        <div class="header__left">
+            <h1>
+                Boas-vindas ao portfólio de Tainá Morais, Web Developer.
+            </h1>
+            <p>
+                Sou Desenvolvedora Web Fullstack, apaixonada por criar soluções tecnológicas, possuo perfil <em>lifelong learning</em> e comprometida com a qualidade das atividades que executo. Sou <em>Psicóloga</em>, pós-graduada em <em>Administração</em>, com vasta vivência com equipes multidisciplinares.
+            </p>
+            <a href="#about" class="btn btn-primary">Saiba mais!</a>
+        </div>
+
+        <div class="header__right">
+            <div class="header__image">
+                <img src="images/foto-taina-morais-pb.jpeg" alt="Tainá Morais" class="taina">
+                <img src="images/background02.jpg" alt="background" class="background">
+            </div>
         </div>
     </header>
 
-    <main>
-        <h2>Sobre mim</h2>
-        <div id="aboutme">
-            <p> Estou em transição de carreira para a área de tecnologia, com foco em <em>Desenvolvimento Web</em>, e meu primeiro grande passo para realizar este sonho foi através do programa de imersão de mulheres na tecnologia, realizado pela <a href="https://www.elasprogramam.com.br/">Elas Programam</a>.</p>
-            <p>Em seguida, passei no processo seletivo para do programa de formação “<em>Meninas in Tech</em>”, através da <a href="">Fly Educação</a>, em parceria com a Alura. Neste programa, recebi a certificação da trilha completa de "Iniciante em Programação".</p>
-            <p>Possuo perfil <em>lifelong learning</em>, busco sempre novo conhecimentos e formas de resolução de problemas. Possuo boa capacidade analítica, organização e planejamento. Sou comprometida com a qualidade das atividades que executo.</p>
-            <p>Sou <em>Psicóloga</em>, pós-graduada em <em>Administração</em>, com vivência em equipes multidisciplinares, liderança de equipes.</p>
+    <!-- about -->
+    <section id="about" class="about max-width">
+        <div class="about__left">
+            <h2 class="secondary-title">
+                Além do código: quem sou eu?
+            </h2>
+            <p>
+                Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre meu trabalho?
+            </p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/taina-morais/" target="_blank"><img src="./images/linkedin-logo.jpg" alt="LinkedIn" width="50px"></a></li>
+                <li><a href="https://github.com/tainamorais" target="_blank"><img src="./images/github-logo.svg" alt="GitHub" width="50px"></a></li>
+                <li><a href="https://wa.me/5521998751002" target="_blank"><img src="./images/whatsapp-logo.png" alt="WhatsApp" width="50px"></a></li>
+            </ul>
         </div>
-    </main>
 
-
+        <div class="about__right">
+            <h3 class="tertiary-title mb-m">
+                Desenvolvedora Fukkstack apaixonada por tecnologia e soluções criativas
+            </h3>
+            <p>
+                Sempre fui apaixonada e curiosa pela área de tecnologia, o que me motivou a seguir a transição de carreira para a área de Desenvolvimento Web.
+            </p>
+            <p>
+                Busco sempre novos conhecimentos e formas de resolução de problemas. Possuo boa capacidade analítica, organização e planejamento. Procuro aperfeiçoamento contínuo e crescimento profissional.
+            </p>
+        </div>
+    </section>
 
    
 
@@ -52,7 +92,7 @@
 
     
 
-    <h2>Ferramentas</h2>
+    <!-- <h2>Ferramentas</h2>
     <ul class="ferramentas">
         <li>HTML</li>
         <li>CSS</li>
@@ -63,9 +103,9 @@
         <li>Node.js</li>
         <li>Git</li>
         <li>GitHub</li>
-    </ul>
+    </ul> -->
 
-    <hr>
+    <!-- <hr>
     <h2 id="projetos">Projetos</h2>
     <a href="https://tainamorais.github.io/projeto-bikcraft/" target="_blank">Projeto BIKCRAFT</a> <br> <br>
     <a href="https://tainamorais.github.io/projeto-bikcraft/" target="_blank"><img src="images/imagem-projeto-bikcraft.png" alt="Imagem do projeto bikcraft" width="400px"></a>
@@ -76,9 +116,12 @@
     <a id="contatos" href="mailto:tainafms@gmail.com" target="_blank">tainafms@gmail.com</a> <br> <br>
     <a href="https://wa.me/5521998751002" target="_blank"><img src="images/whatsapp-logo.png" alt="Logo WhatsApp" width="60px"></a>
     <a href="https://github.com/tainamorais" target="_blank"><img src="images/github-logo.svg" alt="Logo GitHub" width="60px"></a>
-    <a href="https://www.linkedin.com/in/taina-morais/" target="_blank"><img src="images/linkedin-logo.jpg" alt="Logo LinkedIn" width="60px"></a>
+    <a href="https://www.linkedin.com/in/taina-morais/" target="_blank"><img src="images/linkedin-logo.jpg" alt="Logo LinkedIn" width="60px"></a> -->
 
-    <footer>
+    <!-- <footer>
         Created by <a href="https://github.com/tainamorais">Tainá Morais</a>, 2022.
-    </footer>
+    </footer> -->
+
+    <script src="scripts/index.js"></script>
+</body>
 </html>
