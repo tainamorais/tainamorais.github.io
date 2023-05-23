@@ -25,6 +25,11 @@
 .about .about__left ul li a {
   display: inline-block;
   padding: 1rem;
+  transition: 0.15s;
+}
+
+.about .about__left ul li a:hover {
+  transform: scale(1.05);
 }
 
 .about .about__right {

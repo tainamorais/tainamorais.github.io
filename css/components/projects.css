@@ -42,9 +42,11 @@
 .projects ul li .projects__info a {
   font-weight: 500;
   text-decoration: underline;
+  transition: 0.15s;
+  display: block;
 }
 
 .projects ul li .projects__info a:hover {
-  color: var(--tertiary-color);
-  color: rgb(0, 100, 92);
+  color: var(--text-hover-color);
+  transform: scale(1.01);
 }
